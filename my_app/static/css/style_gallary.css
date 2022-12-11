@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    margin: auto;
+    font-family: monospace;
+    box-sizing: border-box;
+    /* background-color: rgb(66, 66, 234); */
+
+}
+
+html,
+body {
+    background-color: rgb(4, 4, 95);
+
+
+}
+
+
+
+
+.container1 {
+    background-color: blue;
+    display: grid;
+
+    grid-template-columns: 200px auto;
+    height: 100px;
+    z-index: 1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+
+
+
+}
+
+
+
+
+
+.logo img {
+    display: block;
+    width: 200px;
+
+
+}
+
+.navRight {
+    background-color: blue;
+    text-align: right;
+
+}
+
+.navRight a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 0px 10px;
+    line-height: 100px;
+    padding-left: 80px;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.navRight :hover {
+    color: red;
+}
+
+/* next line */
+
+.heading1 h1 {
+    font-size: 50px;
+    padding-top: 40px;
+    padding-left: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+/* images */
+
+.grid-wrapper {
+    padding: 20px;
+    background-color: rgb(4, 4, 95);
+}
+
+.gall img {
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+.grid-wrapper>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+
+}
+
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+
+
+.container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    height: 200px;
+    padding-top: 100px;
+    /* background-color: rgb(4, 4, 95); */
+
+}
+
+.container4 img {
+    width: 150px;
+    height: 80px;
+    display: flex;
+}
+
+/* footer */
+
+.footer {
+    background-color: blue;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 80px;
+}
+
+.footer h1 {
+    font-size: 20px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
